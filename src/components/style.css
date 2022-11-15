@@ -1,0 +1,15 @@
+
+/* TODO: implement the WeatherCard design */
+/* Feel free to add more CSS classes as needed */
+.weather_card {
+height:auto;
+
+
+}
+.weather_card h3{
+    color: #629db1;
+}
+
+.weather_temp{
+    display: flex;
+}
