@@ -13,10 +13,10 @@ export const WeatherCard = ({ day }) => (
     <h2>{new Date(day.Date).toDateString()}</h2>
     <h3>{day.Day.IconPhrase}</h3>
     <div className="weather_temp">
-        <div>
-      Temperatures:
-      <div>min. {day.Temperature.Minimum.Value} C</div>  
-       <div>max. {day.Temperature.Maximum.Value} C</div> 
+      <div>
+        Temperatures:
+        <div>min. {day.Temperature.Minimum.Value}  {day.Temperature.Minimum.Unit}</div>
+        <div>max. {day.Temperature.Maximum.Value} {day.Temperature.Maximum.Unit}</div>
       </div>
       {getIcon(day.Day.Icon) ? (
         <img src={getIcon(day.Day.Icon)} alt="icon" />
@@ -24,10 +24,5 @@ export const WeatherCard = ({ day }) => (
         "no image"
       )}
     </div>
-
-    {/* <h2>
-  {day.date}
- </h2>
- <div> {day.Temperature.Minimum.value}</div> */}
   </div>
 );

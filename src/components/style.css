@@ -1,9 +1,9 @@
 
 /* TODO: implement the WeatherCard design */
 /* Feel free to add more CSS classes as needed */
-.weather_card {
+.weather_card.city {
 height:auto;
-
+margin-right: 10px;
 
 }
 .weather_card h3{
